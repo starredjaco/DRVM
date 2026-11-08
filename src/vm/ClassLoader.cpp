@@ -52,7 +52,7 @@ ClassFile* ClassLoader::loadClass(const std::string& className)
     }
 
 
-    std::cout << "Loading " << className << " from " << path << '\n';
+    std::cerr << "Loading " << className << " from " << path << '\n';
    
     auto classFile = std::make_unique<ClassFile>(path);
 

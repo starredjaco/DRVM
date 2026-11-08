@@ -21,7 +21,6 @@
 
 #include "vm/VM.hpp"
 
-#include <iostream>
 
 
 static void parseArrayDescriptor(const std::string& desc, int& dimensions, ValueType& leafType)
@@ -445,11 +444,6 @@ bool VM::tryInvokeNative(const std::string& className, const std::string& method
     return true;
 }
 
-#include <charconv>
-#include <cmath>
-#include <functional>
-//#include <iostream>
-#include <string>
 
 
 namespace
